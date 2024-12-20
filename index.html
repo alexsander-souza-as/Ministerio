@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids com Lista de Nomes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .grid h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .grid ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .grid ul li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .grid ul li:last-child {
+            border-bottom: none;
+        }
+
+        .bottom-grid {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <h3>
+                <p>PASTORES</p>
+            </h3>
+            <ul>
+                <li>Presidente: Pr. Gilson Schinemann</li>
+                <li>Vice-presidente: Pr. Erondi Kailer</li>
+                <li>Pr. Adão Pereira</li>
+                <li>Pr. Anderson Cristo</li>
+                <li>Pr. Carlos Moura</li>
+                <li>Pr. Fábio dos Santos</li>
+                <li>Pr. Gerson Miranda</li>
+                <li>Pr. Ivan Furquim</li>
+                <li>Pr. José Carlos</li>
+                <li>Pr. Marcio Cordova</li>
+                <li>Pr. Marcos Vinicio de Ramos Valandro</li>
+                <li>Pr. Mauro Luiz Horzey de Souza</li>
+                <li>Pr. Odair Jose Ferreira dos Santos </li>
+                <li>Pr. Olandir Cruz</li>
+                <li>Pr. Osemario Andrade</li>
+                <li>Pr. Ovande Rauen</li>
+                <li>Pr. Paulo Sergio dos Santos</li>
+                <li>Pr. Rafael Trevisan </li>
+                <li>Pr. Rene Silverio</li>
+                <li>Pr. Rodrigo Cordeiro</li>
+                <li>Pr. Vagner Rivarolli</li>
+                <li>Pr. Vilson Domingues</li>
+                <h3>
+                    <p>EVANGELISTAS</p>
+                </h3>
+                <li>Ev. Adelino da Silva</li>
+                <li>Ev. Adão Rodrigues</li>
+                <li>Ev. Alexandre Crotti</li>
+                <li>Ev. Alon Silva</li>
+                <li>Ev. Carlos Cordeiro</li>
+                <li>Ev. Carlos Souza</li>
+                <li>Ev. Daniel Milark</li>
+                <li>Ev. Dirceu Taborda Faria</li>
+                <li>Ev. Edgar Ceccon</li>
+                <li>Ev. Elio Faustino</li>
+                <li>Ev. Fernando Hidalgo</li>
+                <li>Ev. Francisco Vicente</li>
+                <li>Ev. José Joaquim Pereira</li>
+                <li>Ev. Leandro Moraes</li>
+                <li>Ev. Marcos Antônio</li>
+                <li>Ev. Rodrigo Tavares</li>
+                <li>Ev. Teófilo Dualiby </li>
+                <li>Ev. Valdeir Daniel dos Santos</li>
+            </ul>
+        </div>
+        <div class="grid">
+            <h3>
+                <p>PRESBÍTEROS</p>
+            </h3>
+            <ul>
+                <li>Pb. Amauri Brandão</li>
+                <li>Pb. Amauri Brandão Jr</li>
+                <li>Pb. Claudinei Martins</li>
+                <li>Pb. Claudio Cardoso dos Santos</li>
+                <li>Pb. Daniel Antônio Ramp</li>
+                <li>Pb. Daniel Milark Jr</li>
+                <li>Pb. Daniel pinheiros</li>
+                <li>Pb. Dazir Maciel</li>
+                <li>Pb. Edson Fernandes</li>
+                <li>Pb. Elias fortes</li>
+                <li>Pb. Eliezer Andrade</li>
+                <li>Pb. Florisval Rodrigues da Silva</li>
+                <li>Pb. Gilvan Rosa Nascimento</li>
+                <li>Pb. Hanilton Batista da Silva</li>
+                <li>Pb. Joucemar de Jesus Cardoso</li>
+                <li>Pb. João Moreira</li>
+                <li>Pb. Laudemiro pinheiros</li>
+                <li>Pb. Marcelo Scheffer da Rocha</li>
+                <li>Pb. Nilton Cezar Ribeiro</li>
+                <li>Pb. Renan Falavinha</li>
+                <li>Pb. Sebastião Rufino</li>
+                <li>Pb. Valdeci Batista de Souza</li>
+                <h3>
+                    <p>DIÁCONOS</p>
+                </h3>
+                <li>Dc. Adilson Luciano</li>
+                <li>Dc. Alceu de Paula Ramos</li>
+                <li>Dc. Aliomar Moreira</li>
+                <li>Dc. Cilineu Salles</li>
+                <li>Dc. Clodoaldo passos da Silva</li>
+                <li>Dc. Diogo da Silva Bandeira</li>
+                <li>Dc. Edivaldo Silva dos Santos</li>
+                <li>Dc. Eduardo Kulik</li>
+                <li>Dc. Fabio de Souza</li>
+                <li>Dc. Heverton Aguiar</li>
+                <li>Dc. Ivair Slompo</li>
+                <li>Dc. João Carlos Miguel</li>
+                <li>Dc. Jorge Matias</li>
+                <li>Dc. José Carlos</li>
+                <li>Dc. José Donato</li>
+                <li>Dc. Marcio Mozoni</li>
+                <li>Dc. Marcos Henrique Pereira dos Santos</li>
+                <li>Dc. Moises Trizotti</li>
+                <li>Dc. Oraci Morato Peniche</li>
+                <li>Dc. Osmar Abelardino da Silva</li>
+                <li>Dc. Roberto Carlos Geib</li>
+                <li>Dc. Rogério Carneiro de Souza Silva</li>
+                <li>Dc. Uzaediclan Nis Machado</li>
+                <li>Dc. Wilson Soares</li>
+
+            </ul>
+        </div>
+        <div class="grid bottom-grid">
+            <h3>
+                <p>COOPERADORES</p>
+            </h3>
+            <ul>
+                <li>Cp. Abimael Carvalho</li>
+                <li>Cp. Adilson Rodrigues</li>
+                <li>Cp. Adão Nis</li>
+                <li>Cp. Agnes Marcelo Milani </li>
+                <li>Cp. Aguinaldo Lima dos Santos</li>
+                <li>Cp. Alexsander Lima de Souza</li>
+                <li>Cp. Alisandro Luiz Machado</li>
+                <li>Cp. Amauri do Carmo dos Santos</li>
+                <li>Cp. Anderson Bruno</li>
+                <li>Cp. Angelo Martins</li>
+                <li>Cp. Arnaldo Augusto Ribeiro</li>
+                <li>Cp. Caio Oliveira Barbosa</li>
+                <li>Cp. Cleber Silva</li>
+                <li>Cp. Daniel Oliveira </li>
+                <li>Cp. Domício Cardoso da Silva</li>
+                <li>Cp. Ebenezer Veiga</li>
+                <li>Cp. Elias Batista dos Santos</li>
+                <li>Cp. Elias Rodrigues</li>
+                <li>Cp. Eliel Batista</li>
+                <li>Cp. Eliezer Luiz Plumkoski</li>
+                <li>Cp. Elton Córdova </li>
+                <li>Cp. Evandro fortes </li>
+                <li>Cp. Everson Martins</li>
+                <li>Cp. Helinton Zacarkin</li>
+                <li>Cp. Hiago Mendes</li>
+                <li>Cp. Ismael Pinheiros</li>
+                <li>Cp. Ivanor Aparecido Rodrigues</li>
+                <li>Cp. Jeferson Brandão</li>
+                <li>Cp. Jose Antonio Moreira</li>
+                <li>Cp. José Ferreira</li>
+                <li>Cp. Josenias Matias dos Santos</li>
+                <li>Cp. Lauro Candido dos Santos</li>
+                <li>Cp. Lindoir Antonio Raab</li>
+                <li>Cp. Lucas Feitosa</li>
+                <li>Cp. Luis Carlos Pontes Soares </li>
+                <li>Cp. Luiz Gustavo Lourenço de Souza</li>
+                <li>Cp. Lukas Alves</li>
+                <li>Cp. Matheus Ribeiro</li>
+                <li>Cp. Samuel Araújo </li>
+                <li>Cp. Samuel Batista dos Santos</li>
+                <li>Cp. Sandro Luciano Schrammel </li>
+                <li>Cp. Sebastião Ribeiro da Silva </li>
+                <li>Cp. Sergio Gomes </li>
+                <li>Cp. Thiago Lopes </li>
+                <li>Cp. Valdevino Matos</li>
+                <li>Cp. Valdir Godoi Fernandes </li>
+                <li>Cp. Valmir Penkowsky </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
